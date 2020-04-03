@@ -44,7 +44,7 @@ if __name__ == "__main__":
     #figure out what the time axis is
     dt = 1.0 / fs
     tmax = N * dt
-    t = np.arange(0, tmax, dt) * 1e9
+    t = np.arange(0, tmax, dt) * 1e9 #multiply by 1e9 to convert to nanoseconds
 
     #plot results
     fig, a = plt.subplots(2,2,sharey=True)
